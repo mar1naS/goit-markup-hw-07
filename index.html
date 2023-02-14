@@ -19,6 +19,18 @@
     <header>
       <div class="container main-nav">
         <a href="./index.html" class="logo"><span class="web-logo">Web</span>Studio</a>
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          aria-controls="menu-container"
+        >
+          <svg width="24" height="24" aria-label="Перемикач мобільного меню">
+            <use class="icon-mobile-cross" href="./images/icons.svg#icon-close_24px"></use>
+            <use class="icon-mobile-menu" href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+        <div class="menu-container">Контент меню</div>
         <nav>
           <ul class="site-nav list">
             <li class="item"><a href="./index.html" class="link current">Студія</a></li>
@@ -104,7 +116,7 @@
       </section>
       <section class="section section-projects">
         <!-- ЧИМ МИ ЗАЙМАЄМОСЬ -->
-        <div class="container">
+        <div class="container additional-content">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list section-list">
             <li class="item">
