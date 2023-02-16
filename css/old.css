@@ -90,9 +90,9 @@ header {
 }
 /*Site-nav*/
 
-.site-nav {
+/* .site-nav {
   display: flex;
-}
+} */
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;

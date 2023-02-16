@@ -46,8 +46,7 @@ img {
   max-width: 100%;
 }
 
-ul,
-ol {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -160,7 +159,7 @@ header {
   text-decoration: none;
 }
 
-@media and screen (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
@@ -172,6 +171,31 @@ header {
 }
 
 /*---Навігація планшет та десктоп---*/
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-nav {
+    display: flex;
+    margin-right: 96px;
+  }
+
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: flex;
+  }
+
+  .site-nav {
+    margin-right: 315px;
+  }
+}
 
 /* MOBILE MENU */
 .mobile-menu {
