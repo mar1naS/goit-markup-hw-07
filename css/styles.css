@@ -309,6 +309,8 @@ header {
     opacity: 0;
     visability: hidden;
     pointer-events: none;
+
+    transition: var(--transition-dur-and-func);
   }
 
   .mobile-menu.is-open {
