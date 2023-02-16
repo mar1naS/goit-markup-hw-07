@@ -287,9 +287,6 @@ header {
 }
 
 /* MOBILE MENU */
-.mobile-menu {
-  display: none;
-}
 
 @media screen and (max-width: 767px) {
   .mobile-menu-button {
@@ -307,10 +304,22 @@ header {
     left: 0;
     background-color: var(--primary-bg-color);
     z-index: 1000;
+
+/*---ховаємо мобільне меню---*/
+    opacity: 0;
+    visability: hidden;
+    pointer-events: none;
+  }
+
+  .mobile-menu.is-open {
+    opacity: 1;
+    visability: visible;
+    pointer-events: auto;
   }
 
   .mobile-menu-container {
     position: relative;
+    padding-left: 25px;
     padding-top: 48px;
     padding-bottom: 48px;
   }
