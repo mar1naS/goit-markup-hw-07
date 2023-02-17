@@ -187,16 +187,16 @@ header {
 
 /* Hero */
 .hero {
-  max-width: 1600px;
+  /* max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin: auto;
-  background-color: #2f303a;
+  background-color: #2f303a; */
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 /* .hero-title {
   margin-top: 0;
@@ -214,7 +214,7 @@ header {
 
 /* Advantages  */
 
-.advantages {
+/* .advantages {
   display: flex;
   justify-content: space-between;
 }
@@ -249,7 +249,8 @@ header {
 
   background-color: var(--btn-bck-color);
   border-radius: 4px;
-}
+} */
+
 /* Projects */
 
 .section-projects {
@@ -435,7 +436,7 @@ header {
 
 /* Button */
 
-button {
+/* button {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
 
@@ -470,7 +471,7 @@ button {
 .button.primary:hover {
   background-color: #188ce8;
   align-items: center;
-}
+} */
 .button.secondary {
   padding: 6px 25px;
   border-color: transparent;
