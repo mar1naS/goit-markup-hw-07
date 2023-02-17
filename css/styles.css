@@ -754,6 +754,19 @@ button {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .section-list .item {
+    width: 354px;
+    margin: 15px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section-list {
     display: flex;
@@ -762,4 +775,76 @@ button {
   .section-list .item:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+/*---Section CLIENTS---*/
+
+@media screen and (max-width: 767px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .clients-list .item {
+    flex-basis: calc((100% - 30px) / 2);
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .clients-list .item {
+    flex-basis: calc((100% - 30px) / 3);
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .clients-list .item {
+    width: 170px;
+    height: 92px;
+  }
+}
+
+.clients-list .link-company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.button-icon {
+  fill: currentColor;
+
+  transition: var(--transition-dur-and-func);
+}
+
+.clients-list .link-company:hover,
+.clients-list .link-company:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients-list .link-company:hover .button-icon,
+.clients-list .link-company:focus .button-icon {
+  fill: currentColor;
 }
