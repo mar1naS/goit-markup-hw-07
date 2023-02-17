@@ -230,13 +230,13 @@ header {
 
   .site-nav .current::after {
     content: '';
-    display: inline-block;
-    color: var(--accent-color);
+    display: block;
+    background-color: var(--accent-color);
 
     position: absolute;
     margin: 0;
     box-sizing: border-box;
-    width: 28px;
+    width: 100%;
     height: 4px;
     border-radius: 2px;
     bottom: 0;
@@ -384,7 +384,7 @@ header {
     color: var(--accent-color);
   }
 
-  .auth-nav-mobile .mobile-menu-link-phone {
+  .mobile-menu-link-phone {
     margin-bottom: 32px;
 
     color: var(--accent-color);
@@ -397,6 +397,8 @@ header {
   }
 
   .auth-nav-mobile .mobile-menu-link-mail {
+    margin-bottom: 64px;
+
     color: var(--primary-text-color);
 
     font-size: 24px;
@@ -408,6 +410,7 @@ header {
 
   .social-mobile {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .social-mobile .item.item:not(:last-child) {
@@ -415,6 +418,8 @@ header {
   }
 
   .social-mobile .link {
+    position: relative;
+
     color: var(--accent-color);
 
     font-size: 18px;
@@ -425,19 +430,14 @@ header {
   }
 
   .social-mobile .link::after {
+    position: absolute;
+    top: 8px;
+
     content: '';
-    display: inline-block;
     width: 22px;
+    height: 0;
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
-
-    position: absolute;
-    margin: 0;
-    box-sizing: border-box;
-    width: 28px;
-    height: 4px;
-    border-radius: 2px;
-    bottom: 0;
   }
 }
 
@@ -675,7 +675,9 @@ button {
   background-color: var(--btn-bck-color);
 }
 
-.section-list .item {
+.team-list .item {
+  padding-bottom: 30px;
+
   background-color: #fff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -688,7 +690,7 @@ button {
   margin-bottom: 10px;
   text-align: center;
 
-  font-color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -698,7 +700,7 @@ button {
   margin-bottom: 16px;
   text-align: center;
 
-  font-color: var(--primary-text-color);
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -708,7 +710,6 @@ button {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-bottom: 30px;
 }
 
 .section-list .social-item {
@@ -752,6 +753,12 @@ button {
 .section-list .social-link:hover .social-icon,
 .section-list .social-link:focus .social-icon {
   fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+  .section-list .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -847,4 +854,71 @@ button {
 .clients-list .link-company:hover .button-icon,
 .clients-list .link-company:focus .button-icon {
   fill: currentColor;
+}
+
+/*---FOOTER---*/
+
+footer {
+  background-color: #2f303a;
+}
+
+.logo.footer {
+  color: var(--primary-bg-color);
+  margin-bottom: 20px;
+}
+
+.list-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contact .address {
+  margin-bottom: 8px;
+
+  color: var(--primary-bg-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.contact .info {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.contact .mail-info {
+  margin-bottom: 8px;
+}
+
+.contact .info:hover,
+.contact .info:focus,
+.contact .address:hover,
+.contact .address:focus {
+  color: var(--accent-color);
+
+  transition: var(--transition-dur-and-func);
+}
+
+.contact .phone-info {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact .address {
+    margin-bottom: 9px;
+  }
+
+  .contact .info {
+    margin-bottom: 9px;
+  }
 }
