@@ -678,7 +678,7 @@ header {
   margin-right: 93px;
 }
 
-.footer-instructions {
+/* .footer-instructions {
   margin-bottom: 20px;
 
   font-family: 'Roboto';
@@ -689,17 +689,17 @@ header {
   text-transform: uppercase;
 
   color: var(--primary-bg-color);
-}
+} */
 
 .social-contacts .social-list {
   display: flex;
 }
 
-.social-contacts .social-item {
+/* .social-contacts .social-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
-}
+} */
 
 .social-contacts .social-item:last-child {
   margin-right: 0px;
