@@ -150,15 +150,42 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list section-list">
             <li class="item">
-              <img src="./images/tablet.jpg" alt="Друк на планшеті" width="370" />
+              <img
+                srcset="
+                  ./images/desktop-w370px/comp-services.jpg,
+                  ./images/desktop-w370px/comp-services@2x.jpg 2x,
+                  ./images/desktop-w370px/comp-services@3x.jpg 3x
+                "
+                src="./images/desktop-w370px/comp-services.jpg"
+                alt="Друк на планшеті"
+                width="370"
+              />
               <p class="label">десктопні додатки</p>
             </li>
             <li class="item">
-              <img src="./images/phone.jpg" alt="Друк з телефона" width="370" />
+              <img
+                srcset="
+                  ./images/desktop-w370px/comp-services-2.jpg,
+                  ./images/desktop-w370px/comp-services-2@2x.jpg 2x,
+                  ./images/desktop-w370px/comp-services-2@3x.jpg 3x
+                "
+                src="./images/desktop-w370px/comp-services-2.jpg"
+                alt="Друк з телефона"
+                width="370"
+              />
               <p class="label">мобільні додатки</p>
             </li>
             <li class="item">
-              <img src="./images/color.jpg" alt="Палітра кольорів" width="370" />
+              <img
+                srcset="
+                  ./images/desktop-w370px/comp-services-3.jpg,
+                  ./images/desktop-w370px/comp-services-3@2x.jpg 2x,
+                  ./images/desktop-w370px/comp-services-3@3x.jpg 3x
+                "
+                src="./images/desktop-w370px/comp-services-3.jpg"
+                alt="Палітра кольорів"
+                width="370"
+              />
               <p class="label">дизайнерські рішення</p>
             </li>
           </ul>
@@ -171,12 +198,40 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list section-list team-list">
             <li class="item">
-              <img
-                class="person-img"
-                src="./images/photo/demyanenko.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-w450px/mob-team-igor.jpg,
+                    ./images/mobile-w450px/mob-team-igor@2x.jpg 2x,
+                    ./images/mobile-w450px/mob-team-igor@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-w354px/tab-team-igor.jpg,
+                    ./images/tablet-w354px/tab-team-igor@2x.jpg 2x,
+                    ./images/tablet-w354px/tab-team-igor@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-w370px/comp-team-igor.jpg
+                    ./images/tablet-w354px/comp-team-igor@2x.jpg 2x,
+                    ./images/tablet-w354px/comp-team-igor@3x.jpg 3x
+                  "
+                />
+
+                <img
+                  class="person-img"
+                  src="./images/mobile-w450px/mob-team-igor.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                />
+              </picture>
+
               <h3 class="name">Ігор Дем'яненко</h3>
               <p class="position">Product Designer</p>
               <ul class="social-list list">
@@ -211,12 +266,41 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                class="person-img"
-                src="./images/photo/repina.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-w450px/mob-team-olga.jpg,
+                    ./images/mobile-w450px/mob-team-olga@2x.jpg 2x,
+                    ./images/mobile-w450px/mob-team-olga@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-w354px/tab-team-olga.jpg,
+                    ./images/tablet-w354px/tab-team-olga@2x.jpg 2x,
+                    ./images/tablet-w354px/tab-team-olga@3x.jpg 3x
+                  "
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-w370px/comp-team-olga.jpg
+                    ./images/tablet-w354px/comp-team-olga@2x.jpg 2x,
+                    ./images/tablet-w354px/comp-team-olga@3x.jpg 3x
+                  "
+                />
+
+                <img
+                  class="person-img"
+                  src="./images/mobile-w450px/mob-team-olga.jpg"
+                  alt="Ольга Рєпіна"
+                  width="270"
+                />
+              </picture>
+
               <h3 class="name">Ольга Рєпіна</h3>
               <p class="position">Frontend Developer</p>
               <ul class="social-list list">
@@ -251,12 +335,41 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                class="person-img"
-                src="./images/photo/tarasov.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-w450px/mob-team-mykola.jpg,
+                    ./images/mobile-w450px/mob-team-mykola@2x.jpg 2x,
+                    ./images/mobile-w450px/mob-team-mykola@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-w354px/tab-team-mykola.jpg,
+                    ./images/tablet-w354px/tab-team-mykola@2x.jpg 2x,
+                    ./images/tablet-w354px/tab-team-mykola@3x.jpg 3x
+                  "
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-w370px/comp-team-mykola.jpg
+                    ./images/tablet-w354px/comp-team-mykola@2x.jpg 2x,
+                    ./images/tablet-w354px/comp-team-mykola@3x.jpg 3x
+                  "
+                />
+
+                <img
+                  class="person-img"
+                  src="./images/mobile-w450px/mob-team-mykola.jpg"
+                  alt="Микола Тарасов"
+                  width="270"
+                />
+              </picture>
+
               <h3 class="name">Микола Тарасов</h3>
               <p class="position">Marketing</p>
               <ul class="social-list list">
@@ -291,12 +404,41 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                class="person-img"
-                src="./images/photo/ermakov.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-w450px/mob-team-michael.jpg,
+                    ./images/mobile-w450px/mob-team-michael@2x.jpg 2x,
+                    ./images/mobile-w450px/mob-team-michael@3x.jpg 3x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-w354px/tab-team-michael.jpg,
+                    ./images/tablet-w354px/tab-team-michael@2x.jpg 2x,
+                    ./images/tablet-w354px/tab-team-michael@3x.jpg 3x
+                  "
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-w370px/comp-team-michael.jpg
+                    ./images/tablet-w354px/comp-team-michael@2x.jpg 2x,
+                    ./images/tablet-w354px/comp-team-michael@3x.jpg 3x
+                  "
+                />
+
+                <img
+                  class="person-img"
+                  src="./images/mobile-w450px/mob-team-michael.jpg"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                />
+              </picture>
+
               <h3 class="name">Михайло Єрмаков</h3>
               <p class="position">UI Designer</p>
               <ul class="social-list list">
@@ -455,7 +597,7 @@
               ></textarea>
             </label>
 
-            <div>
+            <div class="checkbox-container">
               <input
                 id="user-policy"
                 class="form-checkbox-input visually-hidden"
