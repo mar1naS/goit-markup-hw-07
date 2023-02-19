@@ -973,6 +973,12 @@ header {
   font-size: 14px;
 }
 
+@media screen and (max-width:767px) {
+  .checkbox-label {
+  font-size: 10px;
+   }
+}
+
 .form-submit-button {
   min-width: 200px;
   padding-right: 52px;

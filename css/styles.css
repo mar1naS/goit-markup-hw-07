@@ -927,18 +927,20 @@ footer {
 }
 
 .logo.footer {
+  display: block;
   color: var(--primary-bg-color);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .list-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .contact .address {
+  display: block;
+  text-align: center;
   margin-bottom: 8px;
 
   color: var(--primary-bg-color);
@@ -965,6 +967,8 @@ footer {
 }
 
 .contact .mail-info {
+  display: block;
+  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -978,6 +982,8 @@ footer {
 }
 
 .contact .phone-info {
+  display: block;
+  text-align: center;
   margin-bottom: 60px;
 }
 
@@ -985,26 +991,10 @@ footer {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
-  .all-contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contact .address {
-    margin-bottom: 9px;
-  }
-
-  .contact .info {
-    margin-bottom: 9px;
-  }
-}
-
 .footer-instructions {
+  display: block;
+  text-align: center;
+
   margin-bottom: 20px;
 
   color: var(--primary-bg-color);
@@ -1053,13 +1043,45 @@ footer {
 
 .social-contacts .social-list {
   margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo.footer {
+    display: inline-block;
+    text-align: start;
+  }
+
+  .contact .mail-info {
+    display: inline-block;
+    text-align: start;
+  }
+
+  .contact .phone-info {
+    display: inline-block;
+    text-align: start;
+  }
+
+  .contact .address {
+    margin-bottom: 9px;
+  }
+
+  .contact .info {
+    margin-bottom: 9px;
+  }
+
+  .footer-instructions {
+    display: inline-block;
+    text-align: start;
+  }
 }
 
 /*Footer Form*/
 
 .footer-form-input {
-  display: block;
-  width: 450px;
+  width: 100%;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1075,6 +1097,8 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer-form-input {
     width: 358px;
+    margin-right: 10px;
+    margin-bottom: 0;
   }
 }
 
@@ -1104,17 +1128,23 @@ footer {
   transition: background-color 250ms (0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-submit-button {
+    margin: 0 auto;
+  }
+}
+
 .footer-submit-button:hover,
 .footer-submit-button:focus {
   background-color: #188ce8;
 }
 
 @media screen and (min-width: 768px) {
-  .footer-form-container {
+  /* .footer-form-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+  } */
 
   .footer-lists-container {
     display: flex;
@@ -1335,6 +1365,12 @@ footer {
   align-items: center;
   margin-bottom: 30px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1199px) {
+  .checkbox-label {
+    font-size: 8px;
+  }
 }
 
 .form-submit-button {
