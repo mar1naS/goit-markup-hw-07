@@ -1094,6 +1094,12 @@ footer {
   outline: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form-input {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-form-input {
     width: 358px;
@@ -1149,6 +1155,15 @@ footer {
   .footer-lists-container {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .all-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
   }
 }
 
